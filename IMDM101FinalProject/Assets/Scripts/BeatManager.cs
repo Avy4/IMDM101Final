@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class BeatManager : MonoBehaviour
@@ -7,42 +6,54 @@ public class BeatManager : MonoBehaviour
     public enum Lane: int {
         ONE = 0, TWO = 1, THREE = 2, FOUR = 3
     }
+
+    [Header("Initialization")]
+    // Initialize this with the lanes 1-4 in order.
     [SerializeField] LineRenderer[] lanes;
+    [SerializeField] GameObject beatPrefab;
+
+    [Header("Beatmap Settings")]
+    // Where you actually make the beatmap. Its simply an array of Lane enums. 
+    // They get spawned in the lane that you choose one after another. 
     [SerializeField] Lane[] beatMap;
-    [SerializeField] float spawnTimer;
+
+    [Tooltip("Time before the first note gets spawned")]
+    [SerializeField] float timeBeforeStart;
+
+    [Tooltip("Time interval between the spawns of each note after timeBeforeStart has elapsed")]
+    [SerializeField] float spawnInterval;
     private Queue<Lane> beatMapQueue;
+
     void Start()
-    {
+    {   
+        // Just a simple check to ensure that you created a beatmap.
         if (beatMap.Length > 0)
         {
-           beatMapQueue = new Queue<Lane>(beatMap); 
-           Debug.Log("Beatmap exists and is not empty.");
+            // Conv the array to a queue.
+            beatMapQueue = new Queue<Lane>(beatMap); 
+            Debug.Log("Beatmap exists and is not empty.");
         }
 
-        InvokeRepeating("SpawnBeat", 0, .5f);
+        // Calls SpawnBeat every spawnInterval and timeBeforeStart has elapsed
+        InvokeRepeating("SpawnBeat", timeBeforeStart, spawnInterval);
     }
 
     void SpawnBeat()
-    {
+    {   
+        // Check to make sure the beatmap hasn't finished.
         if (!(beatMapQueue.Count == 0))
-        {
-            LineRenderer l = new LineRenderer();
-            switch (beatMapQueue.Dequeue())
-            {   
-                case Lane.ONE:
-                    break;
-                case Lane.TWO:
-                    break;
-                case Lane.THREE:
-                    break;
-                case Lane.FOUR:
-                    break;
-                default:
-                    Debug.Log("** SpawnBeat Error **");
-                    break;
-            }
+        {   
+            // Dequeue the enum and convert it to an int that corresponds to which lane it is for
+            int laneNumber = (int)beatMapQueue.Dequeue();
+            LineRenderer lane = lanes[laneNumber];
+
+            // Create a new beat and initialize it
+            GameObject newBeat = Instantiate(beatPrefab);
+            newBeat.GetComponent<Beat>().Initialize(lane);
         }
 
+        // If the beatmap is finished then we CancelInvoke. 
+        // CancelInvoke essentially turns off the InvokeRpeating() call from Start()
         else
         {
             CancelInvoke();
