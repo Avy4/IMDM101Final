@@ -11,31 +11,34 @@ public class BeatManager : MonoBehaviour
     // Initialize this with the lanes 1-4 in order.
     [SerializeField] LineRenderer[] lanes;
     [SerializeField] GameObject beatPrefab;
-
-    [Header("Beatmap Settings")]
-    // Where you actually make the beatmap. Its simply an array of Lane enums. 
-    // They get spawned in the lane that you choose one after another. 
-    [SerializeField] Lane[] beatMap;
-
-    [Tooltip("Time before the first note gets spawned")]
-    [SerializeField] float timeBeforeStart;
-
-    [Tooltip("Time interval between the spawns of each note after timeBeforeStart has elapsed")]
-    [SerializeField] float spawnInterval;
+    [SerializeField] BeatMap beatMapContainer;
     private Queue<Lane> beatMapQueue;
+
+    // These mirror the variables in BeatMap
+    // There are private references here so you can easily switch out beatmaps
+    private Lane[] beatMap;
+    private float timeBeforeStart;
+    private float spawnInterval;
 
     void Start()
     {   
-        // Just a simple check to ensure that you created a beatmap.
-        if (beatMap.Length > 0)
-        {
-            // Conv the array to a queue.
-            beatMapQueue = new Queue<Lane>(beatMap); 
-            Debug.Log("Beatmap exists and is not empty.");
-        }
+        if (beatMapContainer)
+        {   
+            beatMap = beatMapContainer.GetBeatMap();
+            timeBeforeStart = beatMapContainer.GetTimeBeforeStart();
+            spawnInterval = beatMapContainer.GetSpawnInterval();
 
-        // Calls SpawnBeat every spawnInterval and timeBeforeStart has elapsed
-        InvokeRepeating("SpawnBeat", timeBeforeStart, spawnInterval);
+            // Just a simple check to ensure that you created a beatmap.
+            if (beatMap.Length > 0)
+            {
+                // Conv the array to a queue.
+                beatMapQueue = new Queue<Lane>(beatMap); 
+                Debug.Log("Beatmap exists and is not empty.");
+
+                // Calls SpawnBeat every spawnInterval and timeBeforeStart has elapsed
+                InvokeRepeating("SpawnBeat", timeBeforeStart, spawnInterval);
+            }
+        }
     }
 
     void SpawnBeat()
