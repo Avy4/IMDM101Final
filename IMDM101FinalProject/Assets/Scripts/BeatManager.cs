@@ -19,14 +19,17 @@ public class BeatManager : MonoBehaviour
     private Lane[] beatMap;
     private float timeBeforeStart;
     private float spawnInterval;
+    private float beatSpeed;
 
     void Start()
     {   
         if (beatMapContainer)
         {   
+            // Init the private vars from beatMapContainer
             beatMap = beatMapContainer.GetBeatMap();
             timeBeforeStart = beatMapContainer.GetTimeBeforeStart();
             spawnInterval = beatMapContainer.GetSpawnInterval();
+            beatSpeed = beatMapContainer.GetBeatSpeed();
 
             // Just a simple check to ensure that you created a beatmap.
             if (beatMap.Length > 0)
@@ -52,7 +55,7 @@ public class BeatManager : MonoBehaviour
 
             // Create a new beat and initialize it
             GameObject newBeat = Instantiate(beatPrefab);
-            newBeat.GetComponent<Beat>().Initialize(lane);
+            newBeat.GetComponent<Beat>().Initialize(lane, beatSpeed);
         }
 
         // If the beatmap is finished then we CancelInvoke. 

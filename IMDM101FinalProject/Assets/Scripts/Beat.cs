@@ -44,9 +44,10 @@ public class Beat : MonoBehaviour
         }
     }
 
-    public void Initialize(LineRenderer l)
+    public void Initialize(LineRenderer ln, float spd)
     {
-        line = l;
+        line = ln;
+        speed = spd;
 
         // Can add implementation to change the sprite of the gameobject here too
     }

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "BeatMap", menuName = "Scriptable Objects/BeatMap")]
@@ -10,9 +11,10 @@ public class BeatMap : ScriptableObject
 
     [Tooltip("Time before the first note gets spawned")]
     [SerializeField] float timeBeforeStart= .5f; 
-
     [Tooltip("Time interval between the spawns of each note after timeBeforeStart has elapsed")]
     [SerializeField] float spawnInterval = .5f;
+    [Tooltip("Speed of each beat")]
+    [SerializeField] float beatSpeed = 3f;
 
     public BeatManager.Lane[] GetBeatMap()
     {
@@ -27,5 +29,10 @@ public class BeatMap : ScriptableObject
     public float GetSpawnInterval()
     {
         return spawnInterval;
+    }
+
+    public float GetBeatSpeed()
+    {
+        return beatSpeed;
     }
 }
