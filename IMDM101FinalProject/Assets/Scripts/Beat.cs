@@ -51,4 +51,9 @@ public class Beat : MonoBehaviour
 
         // Can add implementation to change the sprite of the gameobject here too
     }
+
+    public void GetScore()
+    {
+        return;
+    }
 }
