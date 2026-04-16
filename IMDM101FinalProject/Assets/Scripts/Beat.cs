@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Beat : MonoBehaviour
 {   
@@ -8,6 +10,8 @@ public class Beat : MonoBehaviour
     private Vector3 startingPos;
     private Vector3 nextPoint;
     private int idx;
+    private int currentLayer;
+    private bool gotScore = false;
     
     void Start()
     {   
@@ -41,7 +45,30 @@ public class Beat : MonoBehaviour
             {
                 nextPoint = lerpPoints[idx--] + startingPos;
             }
+            else
+            {
+                gameObject.SetActive(false);
+            }
         }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {   
+        String currentLayerTag = collision.gameObject.name;
+        if (!gotScore) {
+            if (currentLayerTag == "Inner")
+            {
+                currentLayer = 0;
+            }
+            else if (currentLayerTag == "Middle")
+            {
+                currentLayer = 2;
+            }
+            else if (currentLayerTag == "Outer")
+            {
+                currentLayer = 1;
+            }
+        }   
     }
 
     public void Initialize(LineRenderer ln, float spd)
@@ -51,9 +78,10 @@ public class Beat : MonoBehaviour
 
         // Can add implementation to change the sprite of the gameobject here too
     }
-
     public void GetScore()
     {
-        return;
+        gotScore = true;
+        Debug.Log(currentLayer);
+        gameObject.SetActive(false);
     }
 }

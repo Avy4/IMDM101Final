@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class PlayerHit : MonoBehaviour
@@ -7,20 +8,19 @@ public class PlayerHit : MonoBehaviour
     void Start()
     {
         beatDetectionCollider = GetComponent<CapsuleCollider2D>();
-        //beatDetectionCollider.enabled = false;
+        beatDetectionCollider.enabled = false;
     }
 
-    void OnAttack()
+    async Task OnAttack()
     {   
-        Debug.Log("attack");
-        //beatDetectionCollider.enabled = true;
+        beatDetectionCollider.enabled = true;
+        // 10 Miliseconds, There must be a better way to implement this
+        await Task.Delay(10);
+        beatDetectionCollider.enabled = false;
     }
-
     void OnTriggerEnter2D(Collider2D collision)
     {   
-        print("trigger entered");
         GameObject hitObject = collision.gameObject;
-        print(hitObject);
         if (hitObject.CompareTag("Beat"))
         {
             Debug.Log("Beat has been hit");
