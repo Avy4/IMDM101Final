@@ -12,9 +12,9 @@ public class BeatMap : ScriptableObject
     [Tooltip("Time before the first note gets spawned")]
     [SerializeField] float timeBeforeStart= .5f; 
     [Tooltip("Time interval between the spawns of each note after timeBeforeStart has elapsed")]
-    [SerializeField] float spawnInterval = .5f;
+    [SerializeField] float spawnIntervalDefault = .5f;
     [Tooltip("Speed of each beat")]
-    [SerializeField] float beatSpeed = 3f;
+    [SerializeField] float beatSpeedDefault = 3f;
 
     public BeatSetting[] GetBeatMap()
     {
@@ -28,11 +28,11 @@ public class BeatMap : ScriptableObject
 
     public float GetSpawnInterval()
     {
-        return spawnInterval;
+        return spawnIntervalDefault;
     }
 
     public float GetBeatSpeed()
     {
-        return beatSpeed;
+        return beatSpeedDefault;
     }
 }
