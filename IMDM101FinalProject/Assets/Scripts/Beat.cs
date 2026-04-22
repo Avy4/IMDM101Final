@@ -4,7 +4,7 @@ using UnityEngine.UIElements;
 
 public class Beat : MonoBehaviour
 {   
-    [SerializeField] float speed = 3;
+    private float speed;
     private LineRenderer line;
     private Vector3[] lerpPoints;
     private Vector3 startingPos;

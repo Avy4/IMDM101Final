@@ -5,9 +5,9 @@ using UnityEngine;
 public class BeatMap : ScriptableObject
 {
     [Header("Beatmap Settings")]
-    // Where you actually make the beatmap. Its simply an array of Lane enums. 
+    // Where you actually make the beatmap. Its simply an array of BeatSetting objects. 
     // They get spawned in the lane that you choose one after another. 
-    [SerializeField] BeatManager.Lane[] beatMap;
+    [SerializeField] BeatSetting[] beatMap;
 
     [Tooltip("Time before the first note gets spawned")]
     [SerializeField] float timeBeforeStart= .5f; 
@@ -16,7 +16,7 @@ public class BeatMap : ScriptableObject
     [Tooltip("Speed of each beat")]
     [SerializeField] float beatSpeed = 3f;
 
-    public BeatManager.Lane[] GetBeatMap()
+    public BeatSetting[] GetBeatMap()
     {
         return beatMap;
     }

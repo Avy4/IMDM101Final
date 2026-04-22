@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c959ffff519fe64e9f5495714413c02, type: 3}
   m_Name: TestMap
   m_EditorClassIdentifier: Assembly-CSharp::BeatMap
-  beatMap: 00000000010000000200000003000000020000000100000000000000
+  beatMap: 00000000010000000200000003000000
   timeBeforeStart: 0.5
-  spawnInterval: 0.75
+  spawnInterval: 0.01
   beatSpeed: 3
