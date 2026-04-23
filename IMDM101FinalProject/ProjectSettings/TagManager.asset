@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Beat
+  - Outer
+  - Middle
+  - Inner
   layers:
   - Default
   - TransparentFX

@@ -1,14 +1,18 @@
 using System;
-using Unity.VisualScripting;
 
 public static class ScoreManager
 {
     private static int Score = 0;
-    private static int Combo = 0 ;
+    private static int Combo = 0;
 
     public static int GetScore()
     {
         return Score;
+    }
+
+    public static int GetCombo()
+    {
+        return Combo;
     }
 
     public static void AddScore(int addedScore)
