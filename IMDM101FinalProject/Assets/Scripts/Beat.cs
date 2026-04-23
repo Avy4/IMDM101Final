@@ -1,16 +1,17 @@
 using System;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UIElements;
 
 public class Beat : MonoBehaviour
 {   
+    const String TAGOuter = "Outer", TAGMiddle = "Middle", TAGInner = "Inner";
     private float speed;
     private LineRenderer line;
     private Vector3[] lerpPoints;
-    private Vector3 startingPos;
-    private Vector3 nextPoint;
+    private Vector3 startingPos, nextPoint;
     private int idx;
-    private int currentLayer;
+    private int scoreToAdd = 0;
     private bool gotScore = false;
     
     void Start()
@@ -54,19 +55,19 @@ public class Beat : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {   
-        String currentLayerTag = collision.gameObject.name;
+        var currentLayerTag = collision.gameObject.tag;
         if (!gotScore) {
-            if (currentLayerTag == "Inner")
+            if (currentLayerTag == TAGInner)
             {
-                currentLayer = 0;
+                scoreToAdd = 0;
             }
-            else if (currentLayerTag == "Middle")
+            else if (currentLayerTag == TAGMiddle)
             {
-                currentLayer = 2;
+                scoreToAdd = 300;
             }
-            else if (currentLayerTag == "Outer")
+            else if (currentLayerTag == TAGOuter)
             {
-                currentLayer = 1;
+                scoreToAdd = 100;
             }
         }   
     }
@@ -75,13 +76,12 @@ public class Beat : MonoBehaviour
     {
         line = ln;
         speed = spd;
-
-        // Can add implementation to change the sprite of the gameobject here too
     }
-    public void GetScore()
+    public void HitObject()
     {
         gotScore = true;
-        Debug.Log(currentLayer);
+        ScoreManager.AddScore(scoreToAdd);
         gameObject.SetActive(false);
+
     }
 }

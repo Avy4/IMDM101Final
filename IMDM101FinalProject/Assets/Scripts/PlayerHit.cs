@@ -24,7 +24,7 @@ public class PlayerHit : MonoBehaviour
         if (hitObject.CompareTag("Beat"))
         {
             Debug.Log("Beat has been hit");
-            hitObject.GetComponent<Beat>().GetScore();
+            hitObject.GetComponent<Beat>().HitObject();
         }
     }
 }
