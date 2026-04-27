@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: TestMap
   m_EditorClassIdentifier: Assembly-CSharp::BeatMap
   beatMap:
-  - {fileID: 11400000, guid: 94d77418650c9814bb0878085aa0fc8e, type: 2}
-  - {fileID: 11400000, guid: 94d77418650c9814bb0878085aa0fc8e, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 1939a4160ed6a8d47b67b7c0ea5dc971, type: 2}
+  - {fileID: 11400000, guid: 16784633a0ef37348806609ab7bbec0c, type: 2}
+  - {fileID: 11400000, guid: 4d3be09cd7a915745b6fb1f1dc5eff3b, type: 2}
   timeBeforeStart: 0.5
   spawnIntervalDefault: 0.5
   beatSpeedDefault: 3

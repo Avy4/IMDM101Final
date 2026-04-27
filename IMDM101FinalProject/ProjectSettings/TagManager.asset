@@ -45,5 +45,29 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: 1Background
+    uniqueID: 725937847
+    locked: 0
+  - name: 2TreesBack
+    uniqueID: 1958528471
+    locked: 0
+  - name: 3TreeBack+
+    uniqueID: 3808540609
+    locked: 0
+  - name: 4TreeFore-
+    uniqueID: 2435602261
+    locked: 0
+  - name: 5TreeFore
+    uniqueID: 2156943329
+    locked: 0
+  - name: 6Sparkles
+    uniqueID: 3936634007
+    locked: 0
+  - name: 7Lanes&Beats
+    uniqueID: 1044452281
+    locked: 0
+  - name: 8Player
+    uniqueID: 2556599005
+    locked: 0
   m_RenderingLayers:
   - Default

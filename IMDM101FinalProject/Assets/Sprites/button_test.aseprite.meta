@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 347ece102f0e5e844be30cf13cd06acc
+guid: c7059bb54120d7c40bd93d0e3b08f444
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: temp2
+  - name: button_test
     originalName: 
-    pivot: {x: 0.5078933, y: -0.029325511}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1837
-      height: 1023
-    spriteID: e9e6aaafb0c9986438b2c5d1700cf0e0
+      width: 55
+      height: 17
+    spriteID: bed1170a122102c4e996ca8a4c2327e3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,25 +153,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 1641953694
+      value0: 479163923
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: temp2
+    name: button_test
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: temp2
+    - name: button_test
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 27
-        y: 30
-        width: 1837
-        height: 1023
-      spriteId: e9e6aaafb0c9986438b2c5d1700cf0e0
+        x: 0
+        y: 0
+        width: 55
+        height: 17
+      spriteId: bed1170a122102c4e996ca8a4c2327e3
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -181,5 +181,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 1920, y: 1080}
-  previousTextureSize: {x: 2048, y: 2048}
+  canvasSize: {x: 55, y: 17}
+  previousTextureSize: {x: 64, y: 32}

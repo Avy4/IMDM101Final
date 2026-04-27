@@ -4,7 +4,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerHit : MonoBehaviour
 {
-
+    [SerializeField] int delay = 20;
     private CapsuleCollider2D beatDetectionCollider;
     void Start()
     {
@@ -15,8 +15,8 @@ public class PlayerHit : MonoBehaviour
     async Task OnAttack()
     {   
         beatDetectionCollider.enabled = true;
-        // 10 Miliseconds, There must be a better way to implement this
-        await Task.Delay(10);
+        // delay Miliseconds, There must be a better way to implement this
+        await Task.Delay(delay);
         beatDetectionCollider.enabled = false;
     }
     void OnTriggerEnter2D(Collider2D collision)
