@@ -234,7 +234,7 @@ ScriptedImporter:
     uvTransform: {x: 332, y: 192}
   - name: sparkly layer
     originalName: 
-    pivot: {x: 0.5, y: -0.0055865925}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -243,7 +243,7 @@ ScriptedImporter:
       x: 660
       y: 192
       width: 320
-      height: 179
+      height: 180
     spriteID: 3b5064b567f843e4fa5892b22b940bca
     spriteBone: []
     spriteOutline: []
@@ -398,9 +398,9 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 1
+        y: 0
         width: 320
-        height: 179
+        height: 180
       spriteId: 3b5064b567f843e4fa5892b22b940bca
     linkedCells: []
     tileCells: []
