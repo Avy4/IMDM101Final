@@ -314,6 +314,7 @@ GameObject:
   - component: {fileID: 338112732}
   - component: {fileID: 338112731}
   - component: {fileID: 338112730}
+  - component: {fileID: 338112733}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -5139,6 +5140,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &338112733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338112729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1292b7cc42e5e6498d72a47499ccaa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BeatParticleEmit
+  textures:
+  - {fileID: 21300000, guid: 6ad95cdd1a570a749b42297ca18fea9c, type: 3}
+  - {fileID: 21300000, guid: 13b12e1ab65fe504eb46c5bd8375c79c, type: 3}
+  - {fileID: 21300000, guid: fa1232eb06e7c7248a3de705abc8bf41, type: 3}
 --- !u!1 &482999332
 GameObject:
   m_ObjectHideFlags: 0
@@ -6520,7 +6537,7 @@ GameObject:
   - component: {fileID: 1728039867}
   m_Layer: 0
   m_Name: Inner
-  m_TagString: Outer
+  m_TagString: Inner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

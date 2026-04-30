@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BeatParticleEmit : MonoBehaviour
+public class ParticleEmitter : MonoBehaviour
 {
     [SerializeField] Sprite[] textures;
     private ParticleSystem particleSystemComponent;
@@ -12,7 +12,7 @@ public class BeatParticleEmit : MonoBehaviour
 
     public void ChangeAndEmitParticle(int idx)
     {
-        GetComponent<ParticleSystem>().textureSheetAnimation.SetSprite(0, textures[idx]);
-        GetComponent<ParticleSystem>().Emit(1);
+        particleSystemComponent.textureSheetAnimation.SetSprite(0, textures[idx]);
+        particleSystemComponent.Emit(1);
     }
 }

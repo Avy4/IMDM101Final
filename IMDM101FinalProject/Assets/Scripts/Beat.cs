@@ -4,6 +4,7 @@ using UnityEngine;
 public class Beat : MonoBehaviour
 {   
     const String TAGOuter = "Outer", TAGMiddle = "Middle", TAGInner = "Inner";
+    const String particleEmitterName = "Particle System";
     private float speed;
     private LineRenderer line;
     private Vector3[] lerpPoints;
@@ -11,7 +12,8 @@ public class Beat : MonoBehaviour
     private int idx;
     private int scoreToAdd = 0;
     private bool gotScore = false;
-    
+    private ParticleEmitter particlerEmitter;
+    private int emitterIdx;
     void Start()
     {   
         // CHANGE IN FINAL IMPLEMENTATION
@@ -29,6 +31,7 @@ public class Beat : MonoBehaviour
         // Set starting pos, sub idx by 1, set next pos, sub idx by 1
         transform.position = lerpPoints[idx--] + startingPos;
         nextPoint = lerpPoints[idx--] + startingPos;
+        particlerEmitter = GameObject.Find(particleEmitterName).GetComponent<ParticleEmitter>();
     }
 
     void Update()
@@ -47,6 +50,10 @@ public class Beat : MonoBehaviour
             else
             {
                 gameObject.SetActive(false);
+                
+                // !!!!!!!!!!
+                ScoreManager.AddScore(scoreToAdd);
+                particlerEmitter.ChangeAndEmitParticle(emitterIdx);
             }
         }
     }
@@ -57,15 +64,19 @@ public class Beat : MonoBehaviour
         if (!gotScore) {
             if (currentLayerTag == TAGInner)
             {
+                print("inner reached");
                 scoreToAdd = 0;
+                emitterIdx = 0;
             }
             else if (currentLayerTag == TAGMiddle)
             {
                 scoreToAdd = 300;
+                emitterIdx = 1;
             }
             else if (currentLayerTag == TAGOuter)
             {
                 scoreToAdd = 100;
+                emitterIdx = 2;
             }
         }   
     }
@@ -79,6 +90,7 @@ public class Beat : MonoBehaviour
     {
         gotScore = true;
         ScoreManager.AddScore(scoreToAdd);
+        particlerEmitter.ChangeAndEmitParticle(emitterIdx);
         gameObject.SetActive(false);
     }
 }
