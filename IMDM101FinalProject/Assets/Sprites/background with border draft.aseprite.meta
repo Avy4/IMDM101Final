@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5ec085ec4d2f13446917065e01a36f76
+guid: 026fcee79906ce245aeb7cdce10ec801
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639128205333568938
+  platformSettingsDirtyTick: 639131555430413493
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 320
+      width: 410
       height: 180
-    spriteID: ae0eb61fc62e7a24ab1d67f94f066501
+    spriteID: 5f10de6da2426364e9fd393b9328d739
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -156,11 +156,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 332
+      x: 422
       y: 4
-      width: 320
+      width: 410
       height: 180
-    spriteID: 4bdd2f2e06a9a444db0bcf5dd9d03566
+    spriteID: caf089591ca658744b584697c558a2e9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -168,29 +168,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 332, y: 4}
+    uvTransform: {x: 422, y: 4}
   - name: 2 layer of trees
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 660
-      y: 4
-      width: 320
-      height: 180
-    spriteID: e5b7037df98ad064b99c502102c924ee
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 660, y: 4}
-  - name: 3 layer of trees
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -200,9 +179,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 192
-      width: 320
+      width: 410
       height: 180
-    spriteID: e9946a06d61cc414c8560cd878a24a4b
+    spriteID: 71ff7254bcbcdeb4caaf344a1401e65d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -211,6 +190,27 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 192}
+  - name: 3 layer of trees
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 422
+      y: 192
+      width: 410
+      height: 180
+    spriteID: 204b8a109f0e7354e8e813c324820e14
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 422, y: 192}
   - name: 4 layers of tree
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -219,11 +219,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 332
-      y: 192
-      width: 320
+      x: 4
+      y: 380
+      width: 410
       height: 180
-    spriteID: b0bf77a281f33e646a31536cf6a6b951
+    spriteID: e1afb8970acc95d4ebb7a807b0efad99
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -231,8 +231,29 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 332, y: 192}
+    uvTransform: {x: 4, y: 380}
   - name: sparkly layer
+    originalName: 
+    pivot: {x: 0.50312495, y: -0.0055865925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 568
+      width: 320
+      height: 179
+    spriteID: 3f2924fd463202c42bdd1fad1dfcba61
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 568}
+  - name: Final Border
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -240,11 +261,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 660
-      y: 192
-      width: 320
+      x: 422
+      y: 380
+      width: 410
       height: 180
-    spriteID: 3b5064b567f843e4fa5892b22b940bca
+    spriteID: 46b2c49604cf6b145a201116600ee5f3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,11 +273,11 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 660, y: 192}
+    uvTransform: {x: 422, y: 380}
   spriteSheetImportData: []
   tileSetImportData: []
   asepriteLayers:
-  - layerIndex: 0
+  - layerIndex: 1
     uuid:
       value0: 2818399296
       value1: 0
@@ -274,14 +295,14 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 320
+        width: 410
         height: 180
-      spriteId: ae0eb61fc62e7a24ab1d67f94f066501
+      spriteId: 5f10de6da2426364e9fd393b9328d739
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
-  - layerIndex: 1
+  - layerIndex: 2
     uuid:
       value0: 2457556964
       value1: 0
@@ -299,14 +320,14 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 320
+        width: 410
         height: 180
-      spriteId: 4bdd2f2e06a9a444db0bcf5dd9d03566
+      spriteId: caf089591ca658744b584697c558a2e9
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
-  - layerIndex: 2
+  - layerIndex: 3
     uuid:
       value0: 2451352577
       value1: 0
@@ -324,14 +345,14 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 320
+        width: 410
         height: 180
-      spriteId: e5b7037df98ad064b99c502102c924ee
+      spriteId: 71ff7254bcbcdeb4caaf344a1401e65d
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
-  - layerIndex: 3
+  - layerIndex: 4
     uuid:
       value0: 3834523682
       value1: 0
@@ -349,14 +370,14 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 320
+        width: 410
         height: 180
-      spriteId: e9946a06d61cc414c8560cd878a24a4b
+      spriteId: 204b8a109f0e7354e8e813c324820e14
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
-  - layerIndex: 4
+  - layerIndex: 5
     uuid:
       value0: 4147416659
       value1: 0
@@ -374,14 +395,14 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 320
+        width: 410
         height: 180
-      spriteId: b0bf77a281f33e646a31536cf6a6b951
+      spriteId: e1afb8970acc95d4ebb7a807b0efad99
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
-  - layerIndex: 5
+  - layerIndex: 6
     uuid:
       value0: 1517933037
       value1: 0
@@ -397,11 +418,36 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
+        x: 44
+        y: 1
+        width: 320
+        height: 179
+      spriteId: 3f2924fd463202c42bdd1fad1dfcba61
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: -1
+  - layerIndex: 7
+    uuid:
+      value0: 1758908312
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Final Border
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Final Border
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
         x: 0
         y: 0
-        width: 320
+        width: 410
         height: 180
-      spriteId: 3b5064b567f843e4fa5892b22b940bca
+      spriteId: 46b2c49604cf6b145a201116600ee5f3
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -432,20 +478,8 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
-  - name: Android
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 320, y: 180}
-  previousTextureSize: {x: 1024, y: 512}
+  canvasSize: {x: 410, y: 180}
+  previousTextureSize: {x: 1024, y: 1024}
