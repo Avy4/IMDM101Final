@@ -80,6 +80,5 @@ public class Beat : MonoBehaviour
         gotScore = true;
         ScoreManager.AddScore(scoreToAdd);
         gameObject.SetActive(false);
-
     }
 }

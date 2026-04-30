@@ -106,6 +106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c3d99d68f62ca47a72834499373429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Beat
+  textures:
+  - {fileID: 2800000, guid: 6ad95cdd1a570a749b42297ca18fea9c, type: 3}
+  - {fileID: 2800000, guid: 13b12e1ab65fe504eb46c5bd8375c79c, type: 3}
+  - {fileID: 2800000, guid: fa1232eb06e7c7248a3de705abc8bf41, type: 3}
 --- !u!50 &4503838579086866998
 Rigidbody2D:
   serializedVersion: 5
