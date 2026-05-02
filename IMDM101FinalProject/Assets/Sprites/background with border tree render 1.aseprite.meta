@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 026fcee79906ce245aeb7cdce10ec801
+guid: 77e390084cbd85c48aa3030a18999bb0
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639131555430413493
+  platformSettingsDirtyTick: 639132658702433234
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -139,7 +139,7 @@ ScriptedImporter:
       y: 4
       width: 410
       height: 180
-    spriteID: 5f10de6da2426364e9fd393b9328d739
+    spriteID: 49a478a53eb5bcb43974759eadd03ea9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,7 +160,7 @@ ScriptedImporter:
       y: 4
       width: 410
       height: 180
-    spriteID: caf089591ca658744b584697c558a2e9
+    spriteID: 5ae30f7d1a8fc82439b0f3101f189557
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -181,7 +181,7 @@ ScriptedImporter:
       y: 192
       width: 410
       height: 180
-    spriteID: 71ff7254bcbcdeb4caaf344a1401e65d
+    spriteID: 107c7e892a6cc1b4195c030c56097174
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -202,7 +202,7 @@ ScriptedImporter:
       y: 192
       width: 410
       height: 180
-    spriteID: 204b8a109f0e7354e8e813c324820e14
+    spriteID: 219f14b3d1456c44ebc993ed7747498f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -223,7 +223,7 @@ ScriptedImporter:
       y: 380
       width: 410
       height: 180
-    spriteID: e1afb8970acc95d4ebb7a807b0efad99
+    spriteID: ebe2167eb0e09bd4bb9180549e1b25bc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -234,7 +234,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 380}
   - name: sparkly layer
     originalName: 
-    pivot: {x: 0.50312495, y: -0.0055865925}
+    pivot: {x: 0.5391304, y: -0.0055865925}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -242,9 +242,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 568
-      width: 320
+      width: 345
       height: 179
-    spriteID: 3f2924fd463202c42bdd1fad1dfcba61
+    spriteID: 53f174b79496b8848a17b78eb963f4be
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -265,7 +265,7 @@ ScriptedImporter:
       y: 380
       width: 410
       height: 180
-    spriteID: 46b2c49604cf6b145a201116600ee5f3
+    spriteID: 3edb823fd616d9f47a562b871eda911c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -274,9 +274,46 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 422, y: 380}
+  - name: Mound
+    originalName: 
+    pivot: {x: 0.9234234, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 357
+      y: 568
+      width: 222
+      height: 40
+    spriteID: 8dbcd520c772982499f8c58ed6de9958
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 357, y: 568}
   spriteSheetImportData: []
   tileSetImportData: []
   asepriteLayers:
+  - layerIndex: 0
+    uuid:
+      value0: 1101044161
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Reference Layer 1
+    layerFlags: 67
+    layerType: 0
+    blendMode: 0
+    cells: []
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: -1
   - layerIndex: 1
     uuid:
       value0: 2818399296
@@ -297,7 +334,7 @@ ScriptedImporter:
         y: 0
         width: 410
         height: 180
-      spriteId: 5f10de6da2426364e9fd393b9328d739
+      spriteId: 49a478a53eb5bcb43974759eadd03ea9
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -322,7 +359,7 @@ ScriptedImporter:
         y: 0
         width: 410
         height: 180
-      spriteId: caf089591ca658744b584697c558a2e9
+      spriteId: 5ae30f7d1a8fc82439b0f3101f189557
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -347,7 +384,7 @@ ScriptedImporter:
         y: 0
         width: 410
         height: 180
-      spriteId: 71ff7254bcbcdeb4caaf344a1401e65d
+      spriteId: 107c7e892a6cc1b4195c030c56097174
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -372,7 +409,7 @@ ScriptedImporter:
         y: 0
         width: 410
         height: 180
-      spriteId: 204b8a109f0e7354e8e813c324820e14
+      spriteId: 219f14b3d1456c44ebc993ed7747498f
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -397,7 +434,7 @@ ScriptedImporter:
         y: 0
         width: 410
         height: 180
-      spriteId: e1afb8970acc95d4ebb7a807b0efad99
+      spriteId: ebe2167eb0e09bd4bb9180549e1b25bc
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -418,11 +455,11 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 44
+        x: 19
         y: 1
-        width: 320
+        width: 345
         height: 179
-      spriteId: 3f2924fd463202c42bdd1fad1dfcba61
+      spriteId: 53f174b79496b8848a17b78eb963f4be
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -447,7 +484,32 @@ ScriptedImporter:
         y: 0
         width: 410
         height: 180
-      spriteId: 46b2c49604cf6b145a201116600ee5f3
+      spriteId: 3edb823fd616d9f47a562b871eda911c
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: -1
+  - layerIndex: 8
+    uuid:
+      value0: 1554777293
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Mound
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Mound
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 222
+        height: 40
+      spriteId: 8dbcd520c772982499f8c58ed6de9958
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
