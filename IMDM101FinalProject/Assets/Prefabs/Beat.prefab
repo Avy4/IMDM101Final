@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6961307829881590037}
   - component: {fileID: 4503838579086866998}
   - component: {fileID: 2756888388916305904}
+  - component: {fileID: 6738287478286206190}
   m_Layer: 0
   m_Name: Beat
   m_TagString: Beat
@@ -84,15 +85,15 @@ SpriteRenderer:
   m_SortingLayer: 7
   m_SortingOrder: 100
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8605069351316857725, guid: 64b3f4d69aaa4e246b2908faeae61350, type: 3}
+  m_Sprite: {fileID: -2471637389799737337, guid: 31a1d35f96be6d44f982a74eb1b9739d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.27, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!114 &6961307829881590037
 MonoBehaviour:
@@ -106,10 +107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c3d99d68f62ca47a72834499373429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Beat
-  textures:
-  - {fileID: 2800000, guid: 6ad95cdd1a570a749b42297ca18fea9c, type: 3}
-  - {fileID: 2800000, guid: 13b12e1ab65fe504eb46c5bd8375c79c, type: 3}
-  - {fileID: 2800000, guid: fa1232eb06e7c7248a3de705abc8bf41, type: 3}
 --- !u!50 &4503838579086866998
 Rigidbody2D:
   serializedVersion: 5
@@ -173,3 +170,25 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.08
+--- !u!95 &6738287478286206190
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8139353244939965808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 7491767832105232625, guid: dee05dc37d439a44cb69f53ab7f9b311, type: 3}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

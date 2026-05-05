@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bdce37cc6319d444e99d273dac346439
+guid: bc34edd8f0e6c164986e73f1255afeef
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -82,7 +82,7 @@ ScriptedImporter:
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
-    addSortingGroup: 0
+    addSortingGroup: 1
     addShadowCasters: 0
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
@@ -97,12 +97,12 @@ ScriptedImporter:
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
-    addSortingGroup: 0
+    addSortingGroup: 1
     addShadowCasters: 0
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639134280997705560
+  platformSettingsDirtyTick: 639135901375297065
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,30 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: filling for bar
+  - name: removable background
     originalName: 
-    pivot: {x: 0.20689657, y: -5.785714}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 37
-      width: 87
-      height: 14
-    spriteID: f4690cb799658a64e88c68699f05dec4
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 37}
-  - name: Outer Border
-    originalName: 
-    pivot: {x: 0.35185185, y: -3.04}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -158,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 108
-      height: 25
-    spriteID: 05aacb33f8f334c45a3dd52a2d5d3115
+      width: 320
+      height: 180
+    spriteID: 3063b5ec7cbc5814fac5f939c262415c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -169,9 +148,76 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: filling for bar
+    originalName: 
+    pivot: {x: 0.42264152, y: -4.4375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 225
+      width: 265
+      height: 16
+    spriteID: 5fce3489b4de4984bba9590e82fc2519
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 225}
+  - name: Outer Border
+    originalName: 
+    pivot: {x: 0.45964915, y: -2.6799998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 192
+      width: 285
+      height: 25
+    spriteID: 1fbec8ad894d3e148847c9bc64ae27d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 192}
   spriteSheetImportData: []
   tileSetImportData: []
   asepriteLayers:
+  - layerIndex: 0
+    uuid:
+      value0: 3829614147
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: removable background
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: removable background
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 180
+      spriteId: 3063b5ec7cbc5814fac5f939c262415c
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: -1
   - layerIndex: 1
     uuid:
       value0: 326434341
@@ -188,11 +234,11 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 142
-        y: 81
-        width: 87
-        height: 14
-      spriteId: f4690cb799658a64e88c68699f05dec4
+        x: 48
+        y: 71
+        width: 265
+        height: 16
+      spriteId: 5fce3489b4de4984bba9590e82fc2519
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -213,11 +259,11 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 122
-        y: 76
-        width: 108
+        x: 29
+        y: 67
+        width: 285
         height: 25
-      spriteId: 05aacb33f8f334c45a3dd52a2d5d3115
+      spriteId: 1fbec8ad894d3e148847c9bc64ae27d4
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -248,20 +294,8 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
-  - name: Android
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 320, y: 180}
-  previousTextureSize: {x: 128, y: 64}
+  previousTextureSize: {x: 512, y: 256}

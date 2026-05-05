@@ -14,19 +14,20 @@ public class BeatManager : MonoBehaviour
     [SerializeField] LineRenderer[] lanes;
     [SerializeField] GameObject beatPrefab;
     [SerializeField] BeatMap beatMapContainer;
+    [SerializeField] AudioClip song;
     private Queue<BeatSetting> beatMapQueue;
 
     // These mirror the variables in BeatMap
     // There are private references here so you can easily switch out beatmaps
     // Defaults
     private BeatSetting[] beatMap;
+    private AudioSource audioPlayer; 
     private float timeBeforeStart;
     private float defaultSpawnInterval;
     private float defaultBeatSpeed;
     private float spawnInterval;
     private bool hasStarted = false;
     private bool hasBeats = true;
-
 
     void Start()
     {   
@@ -45,6 +46,8 @@ public class BeatManager : MonoBehaviour
                 beatMapQueue = new Queue<BeatSetting>(beatMap); 
             }
         }
+
+        audioPlayer = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -55,9 +58,11 @@ public class BeatManager : MonoBehaviour
             if (timeBeforeStart <= 0)
             {
                 hasStarted = true;
+                audioPlayer.Play();
                 SpawnBeat();
             } 
         }
+        
         else if (hasBeats)
         {   
             spawnInterval -= Time.deltaTime;
